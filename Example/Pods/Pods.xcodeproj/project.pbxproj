@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E12D6A8AF4F842C0BD0C8EEDB17E201 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
-		1BE33D7AE0884CE5A1E7200E308AB954 /* DogFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF240CF25305B07719CC276BCF371971 /* DogFetcherTests.swift */; };
 		24967C65DDB8BFABC75CC77B1EBDC24C /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		606839E549FB13EC7EBD86B8A4AC1A46 /* DogFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12047EAADC76A3A242A39210256E0B21 /* DogFetcher-dummy.m */; };
 		719ED4752ADF32F970F4DDB7E61A67EE /* DogFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459E5B13FE5AFB141F8B0755746D5940 /* DogFinder.swift */; };
@@ -49,7 +48,7 @@
 		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		8412973EC32285C853D32114AC8327A6 /* DogFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DogFetcher.release.xcconfig; sourceTree = "<group>"; };
 		9BDB3B030A70A31F1AD5386457C59E5F /* DogFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DogFetcher-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA67AE72B45C434D4B33BDB313D7E6A4 /* DogFetcher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DogFetcher; path = DogFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		DA2B1C187C081256340D65BD10CEDD88 /* DogFinderViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DogFinderViewModel.swift; path = "DogFetcher/DogFetcher/Find Dog/View Model/DogFinderViewModel.swift"; sourceTree = "<group>"; };
 		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F7AF9C6CA1393F7DED38D7748BEB4C82 /* DogResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DogResponse.swift; path = "DogFetcher/DogFetcher/Find Dog/Model/DogResponse.swift"; sourceTree = "<group>"; };
-		FF240CF25305B07719CC276BCF371971 /* DogFetcherTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DogFetcherTests.swift; path = DogFetcher/DogFetcherTests/DogFetcherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +118,6 @@
 		622280516AC311BA5095E44DAAA1A5EC /* DogFetcher */ = {
 			isa = PBXGroup;
 			children = (
-				FF240CF25305B07719CC276BCF371971 /* DogFetcherTests.swift */,
 				459E5B13FE5AFB141F8B0755746D5940 /* DogFinder.swift */,
 				DA2B1C187C081256340D65BD10CEDD88 /* DogFinderViewModel.swift */,
 				1BE564BB91F170B5A8029AFBD41C3570 /* DogResource.swift */,
@@ -129,7 +126,6 @@
 				D80243897277B34E5E4F0B61F7C8849C /* Service.swift */,
 				17F0493CF128C9A80E08583DC3148A9E /* Support Files */,
 			);
-			name = DogFetcher;
 			path = DogFetcher;
 			sourceTree = "<group>";
 		};
@@ -296,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				606839E549FB13EC7EBD86B8A4AC1A46 /* DogFetcher-dummy.m in Sources */,
-				1BE33D7AE0884CE5A1E7200E308AB954 /* DogFetcherTests.swift in Sources */,
 				719ED4752ADF32F970F4DDB7E61A67EE /* DogFinder.swift in Sources */,
 				88627F49A182BBE5CDE7FEB63E0441D3 /* DogFinderViewModel.swift in Sources */,
 				B0381E477F8F30805B52A2852E95169A /* DogResource.swift in Sources */,

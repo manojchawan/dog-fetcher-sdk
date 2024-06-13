@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DogFetcher"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "SDK for random dog images"
   spec.description  = "This SDK will fetch new dog image randomly each time from internet with provided API support also you can fetch multiple image in array"
   spec.homepage     = "https://github.com/manojchawan/dog-fetcher-sdk"
