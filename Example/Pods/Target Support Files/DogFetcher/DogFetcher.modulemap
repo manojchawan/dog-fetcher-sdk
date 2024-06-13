@@ -1,6 +1,0 @@
-framework module DogFetcher {
-  umbrella header "DogFetcher-umbrella.h"
-
-  export *
-  module * { export * }
-}
