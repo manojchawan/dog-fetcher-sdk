@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		637F79EE2C1AF00800419432 /* DogFetcher.docc in Sources */ = {isa = PBXBuildFile; fileRef = 637F79ED2C1AF00800419432 /* DogFetcher.docc */; };
 		637F79F42C1AF00900419432 /* DogFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F79E92C1AF00800419432 /* DogFetcher.framework */; };
-		637F79F92C1AF00900419432 /* DogFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F79F82C1AF00900419432 /* DogFetcherTests.swift */; };
 		637F79FA2C1AF00900419432 /* DogFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 637F79EC2C1AF00800419432 /* DogFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		637F7A062C1AF16F00419432 /* DogFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7A052C1AF16F00419432 /* DogFinder.swift */; };
 		637F7A0B2C1AF36B00419432 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7A0A2C1AF36B00419432 /* NetworkUtility.swift */; };
@@ -34,7 +33,6 @@
 		637F79EC2C1AF00800419432 /* DogFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogFetcher.h; sourceTree = "<group>"; };
 		637F79ED2C1AF00800419432 /* DogFetcher.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DogFetcher.docc; sourceTree = "<group>"; };
 		637F79F32C1AF00900419432 /* DogFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		637F79F82C1AF00900419432 /* DogFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFetcherTests.swift; sourceTree = "<group>"; };
 		637F7A052C1AF16F00419432 /* DogFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFinder.swift; sourceTree = "<group>"; };
 		637F7A0A2C1AF36B00419432 /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		637F7A0C2C1B008600419432 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				637F79EB2C1AF00800419432 /* DogFetcher */,
-				637F79F72C1AF00900419432 /* DogFetcherTests */,
 				637F79EA2C1AF00800419432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,14 +86,6 @@
 				637F79ED2C1AF00800419432 /* DogFetcher.docc */,
 			);
 			path = DogFetcher;
-			sourceTree = "<group>";
-		};
-		637F79F72C1AF00900419432 /* DogFetcherTests */ = {
-			isa = PBXGroup;
-			children = (
-				637F79F82C1AF00900419432 /* DogFetcherTests.swift */,
-			);
-			path = DogFetcherTests;
 			sourceTree = "<group>";
 		};
 		637F7A072C1AF1E200419432 /* View Model */ = {
@@ -266,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637F79F92C1AF00900419432 /* DogFetcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
