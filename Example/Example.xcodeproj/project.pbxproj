@@ -15,6 +15,12 @@
 		637F7AD62C1B6A5800419432 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 637F7AD52C1B6A5800419432 /* Base */; };
 		637F7AE22C1B6D6300419432 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7AE12C1B6D6300419432 /* libPods-Example.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		637F7AE32C1B6DAA00419432 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 637F7ADD2C1B6C7500419432 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		637F7AE82C1C212200419432 /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637F7AE72C1C212200419432 /* DetailsVC.xib */; };
+		637F7AE92C1C212200419432 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7AE62C1C212200419432 /* DetailsVC.swift */; };
+		637F7AEC2C1C234200419432 /* UItableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7AEB2C1C234200419432 /* UItableView+Extension.swift */; };
+		637F7AEF2C1C238300419432 /* DogsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637F7AEE2C1C238300419432 /* DogsTVC.xib */; };
+		637F7AF02C1C238300419432 /* DogsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7AED2C1C238300419432 /* DogsTVC.swift */; };
+		637F7AF42C1C323500419432 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7AF32C1C323500419432 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		637F7AD72C1B6A5800419432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637F7ADD2C1B6C7500419432 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		637F7AE12C1B6D6300419432 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		637F7AE62C1C212200419432 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		637F7AE72C1C212200419432 /* DetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
+		637F7AEB2C1C234200419432 /* UItableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItableView+Extension.swift"; sourceTree = "<group>"; };
+		637F7AED2C1C238300419432 /* DogsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTVC.swift; sourceTree = "<group>"; };
+		637F7AEE2C1C238300419432 /* DogsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogsTVC.xib; sourceTree = "<group>"; };
+		637F7AF32C1C323500419432 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		81B5E543C26E5BA0B715EB1C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C05A8F9F74C2AD0AD8C4D1F3 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D930EA9A317770515E87102F /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,15 +88,61 @@
 		637F7AC82C1B6A5700419432 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				637F7AEA2C1C232F00419432 /* Utility */,
+				637F7AE52C1C210400419432 /* Detail View */,
+				637F7AE42C1C1EEB00419432 /* Home View */,
 				637F7AC92C1B6A5700419432 /* AppDelegate.swift */,
 				637F7ACB2C1B6A5700419432 /* SceneDelegate.swift */,
-				637F7ACD2C1B6A5700419432 /* ViewController.swift */,
-				637F7ACF2C1B6A5700419432 /* Main.storyboard */,
 				637F7AD22C1B6A5800419432 /* Assets.xcassets */,
 				637F7AD42C1B6A5800419432 /* LaunchScreen.storyboard */,
 				637F7AD72C1B6A5800419432 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		637F7AE42C1C1EEB00419432 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				637F7AF22C1C322400419432 /* View Model */,
+				637F7ACD2C1B6A5700419432 /* ViewController.swift */,
+				637F7ACF2C1B6A5700419432 /* Main.storyboard */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		637F7AE52C1C210400419432 /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				637F7AF12C1C240E00419432 /* Cells */,
+				637F7AE62C1C212200419432 /* DetailsVC.swift */,
+				637F7AE72C1C212200419432 /* DetailsVC.xib */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		637F7AEA2C1C232F00419432 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				637F7AEB2C1C234200419432 /* UItableView+Extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		637F7AF12C1C240E00419432 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				637F7AED2C1C238300419432 /* DogsTVC.swift */,
+				637F7AEE2C1C238300419432 /* DogsTVC.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		637F7AF22C1C322400419432 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				637F7AF32C1C323500419432 /* HomeViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		6B619C78954B12F3E0090551 /* Frameworks */ = {
@@ -108,6 +166,7 @@
 				637F7AC22C1B6A5700419432 /* Sources */,
 				637F7AC32C1B6A5700419432 /* Frameworks */,
 				637F7AC42C1B6A5700419432 /* Resources */,
+				0DB3D8D99ABAD18038782526 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,14 +216,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				637F7AD32C1B6A5800419432 /* Assets.xcassets in Resources */,
+				637F7AE82C1C212200419432 /* DetailsVC.xib in Resources */,
 				637F7AD62C1B6A5800419432 /* Base in Resources */,
 				637F7AD12C1B6A5700419432 /* Base in Resources */,
+				637F7AEF2C1C238300419432 /* DogsTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0DB3D8D99ABAD18038782526 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		60F9D5098E64841E761D05AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,7 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				637F7ACE2C1B6A5700419432 /* ViewController.swift in Sources */,
+				637F7AE92C1C212200419432 /* DetailsVC.swift in Sources */,
+				637F7AF42C1C323500419432 /* HomeViewModel.swift in Sources */,
+				637F7AF02C1C238300419432 /* DogsTVC.swift in Sources */,
 				637F7ACA2C1B6A5700419432 /* AppDelegate.swift in Sources */,
+				637F7AEC2C1C234200419432 /* UItableView+Extension.swift in Sources */,
 				637F7ACC2C1B6A5700419432 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YQWB36V8Q;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -382,7 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YQWB36V8Q;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

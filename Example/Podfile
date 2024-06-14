@@ -8,5 +8,6 @@ use_modular_headers!
 
   # Pods for Example
   pod 'DogFetcher'
+  pod 'Kingfisher'
 
 end
