@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         prevbtn.layer.cornerRadius = 8
         submitBtn.layer.cornerRadius = 8
         stepperChanged(self)
-        showLoader()
+        getNextDog(self)
+        checkForIndex()
     }
     private func showLoader(){
         loader.startAnimating()
@@ -42,6 +43,11 @@ class ViewController: UIViewController {
     private func hideLoader(){
         loader.stopAnimating()
         loader.isHidden = true
+    }
+    
+    private func checkForIndex(){
+        print(viewModel.index)
+        prevbtn.isEnabled = (viewModel.index != 1)
     }
     
     @IBAction func stepperChanged(_ sender: Any) {
@@ -56,18 +62,65 @@ class ViewController: UIViewController {
     @IBAction func getMultipleImages(_ sender: Any) {
         showLoader()
         Task{
-            let images = try? await viewModel.getImages(number:Int(imgStepper.value))
-            navigateToDetailsPage(images: images)
+            do{
+                guard let images = try await viewModel.getImages(number:Int(imgStepper.value)) else {
+                    hideLoader()
+                    return
+                }
+                navigateToDetailsPage(images: images)
+            }catch let err {
+                hideLoader()
+                debugPrint(err)
+            }
         }
     }
     
-    private func navigateToDetailsPage(images: [String]?){
+    private func loadImg(url: String?){
+        let url = URL(string: url ?? "")
+        imgView.kf.setImage(with: url)
         hideLoader()
-        guard let _ = images else {return}
+    }
+    
+    
+    @IBAction func getNextDog(_ sender: Any) {
+        showLoader()
+        Task{
+            do{
+                let resultImg = try await viewModel.getNextImage()
+                loadImg(url: resultImg)
+                checkForIndex()
+            }catch let err {
+                hideLoader()
+                debugPrint(err)
+            }
+        }
+        
+        
+    }
+    
+    @IBAction func getPreviousDog(_ sender: Any) {
+        showLoader()
+        Task{
+            do{
+                let resultImg = try await viewModel.getPrevImage()
+                loadImg(url: resultImg)
+                checkForIndex()
+            }catch let err {
+                hideLoader()
+                debugPrint(err)
+            }
+        }
+        
+    }
+    
+    
+    private func navigateToDetailsPage(images: [String]){
+        hideLoader()
         let vc = DetailsVC()
         vc.images = images
         navigationController?.pushViewController(vc, animated: true)
     }
-
+    
+    
 }
 

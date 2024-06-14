@@ -9,17 +9,22 @@ import Foundation
 import DogFetcher
 
 protocol HomeVMProtocol {
-//    func getImage() async throws -> String?
+    func getNextImage() async throws -> String?
+    func getPrevImage() async throws -> String?
     func getImages(number: Int) async throws -> [String]?
+    var index: Int {get}
 }
 
-struct HomeViewModel: HomeVMProtocol{
-    
+final class HomeViewModel: HomeVMProtocol{
     
     private var dogFinder : DogFinder
+    private let repository: DogDataRepository
+    private(set) var index: Int
     
     init(dogFinder: DogFinder) {
         self.dogFinder = dogFinder
+        self.repository = DogDataRepository(dogFinder: dogFinder)
+        index = 0
     }
     
     func getImages(number:Int) async throws -> [String]? {
@@ -30,7 +35,22 @@ struct HomeViewModel: HomeVMProtocol{
         }
     }
     
-//    func getImage() async throws -> String? {
-//    }
+     func getNextImage() async throws -> String?{
+        index += 1
+         do{
+             return try await repository.getDog(byIndex: index)
+         }catch let serviceError {
+             throw serviceError
+         }
+    }
+    
+    func getPrevImage() async throws -> String?{
+        index -= 1
+        do{
+            return try await repository.getDog(byIndex: index)
+        }catch let serviceError {
+            throw serviceError
+        }
+    }
     
 }
