@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var prevbtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
-    private let viewModel = HomeViewModel(dogFinder: DogFinder())
+    private let viewModel = HomeViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

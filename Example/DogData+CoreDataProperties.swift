@@ -19,10 +19,6 @@ extension DogData {
     @NSManaged public var imageUrl: String?
     @NSManaged public var id: Int64
     
-    func convertToDogItem() -> DogItem{
-        return DogItem(index: Int(self.id), imageUrl: self.imageUrl)
-    }
-
 }
 
 extension DogData : Identifiable {

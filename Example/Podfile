@@ -10,4 +10,8 @@ use_modular_headers!
   pod 'DogFetcher'
   pod 'Kingfisher'
 
+  target 'ExampleTests' do
+      inherit! :complete
+  end
+
 end

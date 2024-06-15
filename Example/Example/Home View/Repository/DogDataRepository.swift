@@ -11,27 +11,18 @@ import DogFetcher
 
 
 protocol DogRepository {
-    func create(dogImg: String?, id: Int)
     func getDog(byIndex id: Int) async throws -> String?
 }
 
 struct DogDataRepository: DogRepository {
-    
     private var dogFinder : DogFinder
     
-    init(dogFinder: DogFinder) {
+    init(dogFinder: DogFinder = DogFinder()) {
         self.dogFinder = dogFinder
     }
     
-    func create(dogImg: String?, id: Int) {
-        let cdDog = DogData(context: PersistentStorage.shared.context)
-        cdDog.id = Int64(id)
-        cdDog.imageUrl = dogImg
-        PersistentStorage.shared.saveContext()
-    }
-    
     func getDog(byIndex id: Int) async throws -> String?{
-        let result = get(byIndex: id)
+        let result = getFromDb(byIndex: id)
         if let result = result{
             return result.imageUrl
         }else{
@@ -45,7 +36,14 @@ struct DogDataRepository: DogRepository {
         }
     }
     
-    private func get(byIndex id: Int) -> DogItem? {
+    private func create(dogImg: String?, id: Int) {
+         let cdDog = DogData(context: PersistentStorage.shared.context)
+         cdDog.id = Int64(id)
+         cdDog.imageUrl = dogImg
+         PersistentStorage.shared.saveContext()
+     }
+    
+    private func getFromDb(byIndex id: Int) -> DogData? {
         let fetchRequest = NSFetchRequest<DogData>(entityName: "DogData")
         let predicate = NSPredicate(format: "id = %i", Int64(id))
         
@@ -53,16 +51,12 @@ struct DogDataRepository: DogRepository {
         
         do {
             let result = try PersistentStorage.shared.context.fetch(fetchRequest).first
-            
-            guard result != nil else {return nil}
-            
-            return result?.convertToDogItem()
-            
+            return result
         } catch let error {
             debugPrint(error)
         }
-        
         return nil
+        
     }
     
     

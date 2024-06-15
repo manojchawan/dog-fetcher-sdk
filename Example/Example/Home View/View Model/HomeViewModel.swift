@@ -21,9 +21,9 @@ final class HomeViewModel: HomeVMProtocol{
     private let repository: DogDataRepository
     private(set) var index: Int
     
-    init(dogFinder: DogFinder) {
+    init(dogFinder: DogFinder = DogFinder()) {
         self.dogFinder = dogFinder
-        self.repository = DogDataRepository(dogFinder: dogFinder)
+        self.repository = DogDataRepository()
         index = 0
     }
     
