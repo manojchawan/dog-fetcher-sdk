@@ -30,6 +30,7 @@
 		637F7B0A2C1C4FA300419432 /* DogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7B092C1C4FA300419432 /* DogItem.swift */; };
 		637F7B122C1D934600419432 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7B112C1D934600419432 /* ExampleTests.swift */; };
 		637F7B192C1D986000419432 /* DogDataRepositoryUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7B182C1D986000419432 /* DogDataRepositoryUnitTest.swift */; };
+		637F7B1B2C1DE8BE00419432 /* HomeViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637F7B1A2C1DE8BE00419432 /* HomeViewModelUnitTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		637F7B0F2C1D934600419432 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637F7B112C1D934600419432 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		637F7B182C1D986000419432 /* DogDataRepositoryUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDataRepositoryUnitTest.swift; sourceTree = "<group>"; };
+		637F7B1A2C1DE8BE00419432 /* HomeViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelUnitTest.swift; sourceTree = "<group>"; };
 		654DF123F7B97C72B1514B8A /* Pods-Example-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-ExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-Example-ExampleTests/Pods-Example-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81B5E543C26E5BA0B715EB1C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C05A8F9F74C2AD0AD8C4D1F3 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +225,7 @@
 			children = (
 				637F7B112C1D934600419432 /* ExampleTests.swift */,
 				637F7B182C1D986000419432 /* DogDataRepositoryUnitTest.swift */,
+				637F7B1A2C1DE8BE00419432 /* HomeViewModelUnitTest.swift */,
 			);
 			path = ExampleTests;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 			files = (
 				637F7B192C1D986000419432 /* DogDataRepositoryUnitTest.swift in Sources */,
 				637F7B122C1D934600419432 /* ExampleTests.swift in Sources */,
+				637F7B1B2C1DE8BE00419432 /* HomeViewModelUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

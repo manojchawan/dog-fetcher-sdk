@@ -30,8 +30,8 @@
             filePath = "ExampleTests/DogDataRepositoryUnitTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "test_GetDog_With_New_Id_Returns_RemoteImage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "ExampleTests/DogDataRepositoryUnitTest.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "test_GetDog_With_New_Id_Returns_RemoteImage()"
             landmarkType = "7">
          </BreakpointContent>

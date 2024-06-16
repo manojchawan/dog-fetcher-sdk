@@ -22,7 +22,6 @@ final class DogDataRepositoryUnitTest: XCTestCase {
             expectation.fulfill()
             
         }
-        
         waitForExpectations(timeout: 4, handler: nil)
     }
     
