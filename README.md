@@ -1,4 +1,3 @@
-
 # Dog-Fetcher
 
 Pod for fetching random dog images from the internet
@@ -44,6 +43,14 @@ class Myclass{
 ```
 
 
+## Error Support
+
+in case you face any issue building the project then try changing below setting: 
+
+inside your target -> go to Build Setting -> loog for Build Options ->
+toggle 'User Script Sandboxing = No'
+
+
 ## Screenshots
 
 https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/11d91503-6dbe-43b1-bea0-1396fa1fa785
@@ -51,3 +58,13 @@ https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/11d91503-6dbe-43b
 https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/7bf806b6-fd7d-4d81-b12e-802c1ec9570e
 
 https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/75714c31-96f5-4bc6-94be-64da1f66d6e5
+
+## 🚀 About Me
+I'm an iOS Developer who started coding journey with android. you can connect with me on following channels.
+
+- github: [@manojchawan](https://github.com/manojchawan)
+- linkedIn: [@manojchawan](https://www.linkedin.com/in/manojchawan)
+- twitter: [@manoj_chawan](https://twitter.com/manoj_chawan)
+- instagram: [@manoj_chawan_](https://www.instagram.com/manoj_chawan_)
+
+
