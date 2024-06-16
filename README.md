@@ -15,7 +15,11 @@ CocoaPods
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '16.0'
+
 use_modular_headers!
+
 target 'MyApp' do
+
   pod 'DogFetcher'
+  
 end
