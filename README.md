@@ -55,12 +55,12 @@ toggle 'User Script Sandboxing = No'
 
 
 ## Screenshots
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 05 09](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/fe6e171b-adf3-451c-981e-a519bf9a3391)
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 05 22](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/97edd996-1e08-4400-bb1b-c3a270d9092d)
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 06 49](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/b6446794-0297-423d-a6d1-4d92dcfcbc5a)
+![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 06 30](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/eb7a181f-b8dd-49cc-98df-2b02592ebce7)
 
-https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/11d91503-6dbe-43b1-bea0-1396fa1fa785
 
-https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/7bf806b6-fd7d-4d81-b12e-802c1ec9570e
-
-https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/75714c31-96f5-4bc6-94be-64da1f66d6e5
 
 ## 🚀 About Me
 I'm an iOS Developer who started coding journey with android. you can connect with me on following channels.
