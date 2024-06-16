@@ -55,11 +55,11 @@ toggle 'User Script Sandboxing = No'
 
 
 ## Screenshots
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 05 09](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/fe6e171b-adf3-451c-981e-a519bf9a3391)
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 05 22](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/97edd996-1e08-4400-bb1b-c3a270d9092d)
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 06 49](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/b6446794-0297-423d-a6d1-4d92dcfcbc5a)
-![Simulator Screenshot - iPhone 15 Pro - 2024-06-16 at 13 06 30](https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/eb7a181f-b8dd-49cc-98df-2b02592ebce7)
 
+<img width="237" alt="Screenshot 2024-06-16 at 1 37 00 PM" src="https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/1936c77c-3726-4a44-bfef-736fbec2c6cb">
+<img width="237" alt="Screenshot 2024-06-16 at 1 37 22 PM" src="https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/a52c5f52-6392-4a18-ae66-47f3da5a592c">
+<img width="237" alt="Screenshot 2024-06-16 at 1 37 37 PM" src="https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/aa8c7620-b416-4117-a7a8-a6f508f01cea">
+<img width="237" alt="Screenshot 2024-06-16 at 1 37 43 PM" src="https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/3ffaaea9-0233-4710-8f1e-6776644c2a45">
 
 
 ## 🚀 About Me
