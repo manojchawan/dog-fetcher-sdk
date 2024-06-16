@@ -50,6 +50,9 @@ in case you face any issue building the project then try changing below setting:
 inside your target -> go to Build Setting -> loog for Build Options ->
 toggle 'User Script Sandboxing = No'
 
+<img width="785" alt="Screenshot 2024-06-16 at 1 23 13 PM" src="https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/fd0dfb85-4f60-4b6a-aa1b-8ec245a7347c">
+
+
 
 ## Screenshots
 
