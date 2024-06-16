@@ -1,6 +1,7 @@
 # Dog-Fetcher
 
-Pod for fetching random dog images from the internet
+Pod for fetching random dog images from the internet. 
+developed with MVVM architecture and used XCTest framework for unit tests in the example app.
 
 
 ## Requirements
