@@ -23,3 +23,6 @@ target 'MyApp' do
   pod 'DogFetcher'
   
 end
+
+
+https://github.com/manojchawan/dog-fetcher-sdk/assets/30523794/11d91503-6dbe-43b1-bea0-1396fa1fa785
